@@ -482,10 +482,56 @@ export const bookingSlice = createSlice({
         });
       });
     },
+    addCount: (state, action) => {
+      console.log("1---6", state, action.payload);
+      state.count++;
+    },
+    substractCount: (state, action) => {
+      console.log("1---5", state, action.payload);
+
+      state.count--;
+    },
+
+    updateSelectedTicket: (state, action) => {
+      state.selected_seats_array = action.payload.updatedArray;
+    },
+    updateSeatData: (state, action) => {
+      state.seatData.map((row, rIndex) => {
+        row.map((seat, sIndex) => {
+          if (
+            action.payload.rowIndex === rIndex &&
+            action.payload.seatIndex === sIndex
+          ) {
+            let newArray = state.seatData;
+            if (newArray[rIndex][sIndex].selected === false) {
+              newArray[rIndex][sIndex] = {
+                ...seat,
+                selected: true,
+              };
+            } else {
+              newArray[rIndex][sIndex] = {
+                ...seat,
+                selected: false,
+              };
+            }
+          }
+        });
+      });
+    },
+
+    updateTotalPrice: (state, action) => {
+      state.totlaPrice = action.payload.price;
+    },
   },
 });
 
-// Action creators are generated for each case reducer function
-export const { setSeatsData } = bookingSlice.actions;
+export const {
+  setSeatsData,
+  addCount,
+  substractCount,
+  updateSelectedTicket,
+  updateSeatData,
+  updateTotalPrice,
+} = bookingSlice.actions;
 
 export default bookingSlice.reducer;
