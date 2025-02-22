@@ -10,11 +10,11 @@ const Content = () => {
 
   const dispatch = useDispatch();
   return (
-    <div className="body_container">
+    <div className="screen_seat_container">
       <div className="screen_container">
         <Screen />
       </div>
-      <div className="seat_container">
+      <div>
         {booking.seatData.map((row, rowIndex) => {
           return (
             <div className="raw_view" key={rowIndex}>

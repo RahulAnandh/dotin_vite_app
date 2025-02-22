@@ -8,7 +8,7 @@ const SelectedList = () => {
   const booking = useSelector((state) => state.booking);
 
   return (
-    <div className="selected_list_box">
+    <div>
       <StatusCard />
       {booking.selected_seats_array.map((data) => {
         return <SingleTicket data={data} />;

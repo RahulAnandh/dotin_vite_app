@@ -5,8 +5,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Content />
-      <SelectedList />
+      <div className="content">
+        <Content />
+      </div>
+      <div className="selected_list">
+        <SelectedList />
+      </div>
     </div>
   );
 }
