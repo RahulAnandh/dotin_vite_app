@@ -1,0 +1,32 @@
+.ticket_card {
+  width: 94%;
+  margin: 10px;
+  box-shadow: 5px 5px 8px 2px #888888;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.silver {
+  background-color: #fcfbfbcd;
+  width: 94%;
+  margin: 10px;
+  box-shadow: 5px 5px 8px 2px #888888;
+  height: 60px;
+  border-radius: 5px;
+}
+.gold {
+  background-color: #e7c53e;
+  width: 94%;
+  margin: 10px;
+  box-shadow: 5px 5px 8px 2px #888888;
+  height: 60px;
+  border-radius: 5px;
+}
+.platinum {
+  background-color: #b3b4b1;
+  width: 94%;
+  margin: 10px;
+  box-shadow: 5px 5px 8px 2px #888888;
+  height: 60px;
+  border-radius: 5px;
+}

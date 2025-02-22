@@ -1,0 +1,46 @@
+.screen_container {
+  background-color: rgb(96, 128, 128);
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white;
+}
+
+.seat_container {
+  background-color: rgb(241, 244, 244);
+  width: 100%;
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 70%;
+}
+
+.body_container {
+  width: 100%;
+}
+.raw_view {
+  display: flex;
+}
+.column_view_not_booked {
+  padding: 10px;
+  background-color: rgb(127, 172, 255);
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px 10px 0px 0px;
+}
+.column_view_not_booked:hover {
+  background-color: #b8eaad;
+  box-shadow: 5px 5px 8px 2px #888888;
+}
+.column_view_booked {
+  padding: 10px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(8, 109, 45);
+  box-shadow: 5px 5px 8px 2px #888888;
+  color: #fff;
+}

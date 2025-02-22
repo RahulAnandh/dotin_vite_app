@@ -1,0 +1,11 @@
+.status_box {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+  color: #000;
+  height: 100px;
+  box-shadow: 5px 5px 8px 2px #888888;
+  border-radius: 5px;
+}
