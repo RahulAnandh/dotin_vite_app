@@ -1,11 +1,17 @@
 .screen_seat_container {
-  background-color: #888888;
+  background-color: #dbd8d8;
 }
 .seat_container {
   background-color: rgb(167, 170, 170);
 }
 .screen_container {
-  background-color: aquamarine;
+  background-color: rgb(167, 237, 214);
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 70px;
+  border: 3px solid #080ff4;
+  border-radius: 2px;
 }
 .body_container {
   width: 100%;
@@ -34,4 +40,90 @@
   background-color: rgb(8, 109, 45);
   box-shadow: 5px 5px 8px 2px #888888;
   color: #fff;
+}
+@media screen and (max-width: 740px) {
+  .column_view_not_booked {
+    padding: 10px;
+    background-color: rgb(127, 172, 255);
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .column_view_booked {
+    padding: 10px;
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgb(8, 109, 45);
+    box-shadow: 5px 5px 8px 2px #888888;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 690px) {
+  .column_view_not_booked {
+    padding: 8px;
+    background-color: rgb(127, 172, 255);
+    margin: 8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px 6px 0px 0px;
+    font-size: 12px;
+  }
+  .column_view_booked {
+    padding: 8px;
+    margin: 8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: rgb(8, 109, 45);
+    box-shadow: 5px 5px 8px 2px #888888;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .column_view_not_booked {
+    padding: 7px;
+    background-color: rgb(127, 172, 255);
+    margin: 7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 10px;
+  }
+  .column_view_booked {
+    padding: 8px;
+    margin: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px 4px 0px 0px;
+    background-color: rgb(8, 109, 45);
+    box-shadow: 5px 5px 8px 2px #888888;
+    color: #fff;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .column_view_not_booked {
+    padding: 6px;
+    background-color: rgb(127, 172, 255);
+    margin: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px 3px 0px 0px;
+    font-size: 8px;
+  }
+  .column_view_booked {
+    padding: 6px;
+    margin: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px 3px 0px 0px;
+    background-color: rgb(8, 109, 45);
+    box-shadow: 5px 5px 8px 2px #888888;
+    color: #fff;
+    font-size: 8px;
+  }
 }

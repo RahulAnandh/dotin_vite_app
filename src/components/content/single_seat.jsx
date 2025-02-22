@@ -1,12 +1,28 @@
 import React from "react";
+import { Popover } from "antd";
 
 const SingleSeat = (props) => {
   return (
-    <div
-      className={props.seat.selected ? "selected_seat" : "not_selected_seat"}
+    <Popover
+      title={
+        <div>
+          <div>ID : {props.seat.identifier}</div>
+          <br />
+          <div>TIRE :{props.seat.tire}</div>
+          <br />
+          <div>
+            PRICE :&#8377;
+            {props.seat.tire === "Silver"
+              ? 100
+              : props.seat.tire === "Gold"
+              ? 150
+              : 200}
+          </div>
+        </div>
+      }
     >
-      {props.seat.identifier}
-    </div>
+      <div>{props.seat.identifier}</div>
+    </Popover>
   );
 };
 

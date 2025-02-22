@@ -4,6 +4,10 @@
   box-shadow: 5px 5px 8px 2px #888888;
   height: 60px;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .silver {
@@ -29,4 +33,20 @@
   box-shadow: 5px 5px 8px 2px #888888;
   height: 60px;
   border-radius: 5px;
+}
+.ticket_id {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 28px;
+  border-right: 2px solid rgb(47, 45, 45);
+  border-right-style: dotted;
+  font-weight: bold;
+}
+.ticket_number {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

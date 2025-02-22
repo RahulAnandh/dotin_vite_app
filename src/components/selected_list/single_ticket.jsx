@@ -12,7 +12,7 @@ const SingleTicket = (props) => {
           : "platinum"
       }
     >
-      ID:{props.data.identifier} TIRE:{props.data.tire}
+      <div className="ticket_id">{props.data.identifier}</div>
     </div>
   );
 };
