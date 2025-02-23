@@ -483,12 +483,9 @@ export const bookingSlice = createSlice({
       });
     },
     addCount: (state, action) => {
-      console.log("1---6", state, action.payload);
       state.count++;
     },
     substractCount: (state, action) => {
-      console.log("1---5", state, action.payload);
-
       state.count--;
     },
 

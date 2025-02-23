@@ -3,7 +3,39 @@
   background-color: rgb(255, 255, 255);
 
   color: #000;
-  height: 100px;
+  height: 110px;
   box-shadow: 5px 5px 8px 2px #888888;
-  border: 1px solid black;
+}
+.book_now_button {
+  width: auto;
+  background-color: rgb(68, 68, 255);
+  color: #fff;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  font-size: 16px;
+}
+.status_container {
+  display: flex;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5px;
+  font-size: 18px;
+}
+.left_align {
+  text-align: left;
+  width: 50%;
+}
+.right_align {
+  text-align: right;
+  width: 50%;
+}
+.right_align_selected_tickets {
+  display: flex;
+  position: relative;
+}
+.selected_tickets_summary {
+  right: 0;
 }

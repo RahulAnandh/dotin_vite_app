@@ -1,8 +1,10 @@
 .screen_seat_container {
-  background-color: #dbd8d8;
+  background-color: #fff;
+  box-shadow: 5px 5px 8px 2px #888888;
+  border-radius: 5px;
 }
 .seat_container {
-  background-color: rgb(167, 170, 170);
+  background-color: #fff;
 }
 .screen_container {
   background-color: rgb(167, 237, 214);

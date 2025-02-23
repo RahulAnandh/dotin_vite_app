@@ -17,6 +17,7 @@
   box-shadow: 5px 5px 8px 2px #888888;
   height: 60px;
   border-radius: 5px;
+  display: flex;
 }
 .gold {
   background-color: #e7c53e;
@@ -25,6 +26,7 @@
   box-shadow: 5px 5px 8px 2px #888888;
   height: 60px;
   border-radius: 5px;
+  display: flex;
 }
 .platinum {
   background-color: #b3b4b1;
@@ -33,6 +35,7 @@
   box-shadow: 5px 5px 8px 2px #888888;
   height: 60px;
   border-radius: 5px;
+  display: flex;
 }
 .ticket_id {
   width: 60px;
@@ -49,4 +52,20 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+.right_ticket {
+  padding: 8px;
+}
+.tire {
+}
+.flex_container {
+  display: flex;
+}
+.left_align {
+  text-align: left;
+  width: 50%;
+}
+.right_align {
+  text-align: right;
+  width: 50%;
 }

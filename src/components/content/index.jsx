@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Screen from "./screen";
 import "./index.css";
 import SingleSeat from "./single_seat";
@@ -14,13 +14,13 @@ import {
 
 const Content = () => {
   const booking = useSelector((state) => state.booking);
-  const localCount = useRef(0);
-
   const dispatch = useDispatch();
+
   useEffect(() => {
-    console.log("1---7---", booking);
-    localCount.current = booking.count;
-  }, [booking, booking.count]);
+    if (booking.count > 8) {
+      alert("You can only select up to 8 seats");
+    }
+  }, [booking]);
 
   return (
     <div className="screen_seat_container">
@@ -41,7 +41,6 @@ const Content = () => {
                         : "column_view_not_booked"
                     }
                     onClick={() => {
-                      console.log("1---7---", booking.count);
                       dispatch(
                         updateSeatData({
                           rowIndex: rowIndex,
